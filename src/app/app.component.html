@@ -1,0 +1,72 @@
+ <div class="row navbackground m-0">
+  <div class="col-md-5"> 
+    <div class="row  tab-padding" >
+      <div class="col-md-3 pointer tab-padding" routerLink="/home" routerLinkActive="highlightTab">
+          <!-- <a routerLink="/home" class="navbar-brand"> -->
+            <!-- <img src="./assets/home-button.png" alt="" style="width: 40px;">  -->
+            Home
+          <!-- </a> -->
+      </div>
+      <div class="col-md-3 tab-padding pointer" routerLink="/product-list" routerLinkActive="highlightTab">Products</div>
+      <div class="col-md-3 tab-padding pointer" routerLinkActive="highlightTab">Admin</div>
+      <div class="col-md-3 tab-padding pointer" routerLinkActive="highlightTab">Contacts</div>
+    </div>   
+  </div>
+  <!-- <div class="col-md-2">    
+  </div> -->
+  <div class="col-md-2 offset-md-5 tab-padding">   
+    <div class="row">
+      <div class="col-md-6">
+          <div class="tab-padding pointer" routerLink="/login" routerLinkActive="highlightTab">Login</div>
+          <!-- <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#login">
+                login
+              </button> -->
+              <!-- <div class="modal" id="login"> -->
+              <!-- <app-login></app-login> -->
+<!-- </div> -->
+
+              <!-- <div class="modal" id="login">
+                <div class="modal-dialog">
+
+                  <div class="modal-content">
+                      <div class="modal-body modalbody">
+                         
+                        <app-login></app-login>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               -->
+
+
+
+
+          <!-- <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </button>
+              <div id="" class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item" type="button">login</button>
+                <button class="dropdown-item" type="button">Another action</button>
+                <button class="dropdown-item" type="button">Something else here</button>
+              </div>
+            </div> -->
+      </div>
+      <div class="col-md-6">
+          <!-- <a routerLink="/mycart" class="navbar-brand navbar-right mycart"> -->
+            <i class="fa fa-shopping-cart pointer" routerLink="/mycart"></i>           
+          <!-- </a> -->
+          <label for="" class="cartCount">{{cartItemCount!=0 ? cartItemCount : ''}}</label>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>
+
+<footer>
+  <div class="footer-copyright">This is footer.....</div>
+</footer>
